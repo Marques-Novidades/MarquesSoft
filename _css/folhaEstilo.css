@@ -1,0 +1,330 @@
+@font-face{
+	font-family: 'fonteTopo'
+	src: url("../_fontes/sfcartoonisthandbold(.ttf)");
+}
+@font-face{
+	font-family: 'fontecorpo'
+  src: url("../_fontes/aardvark bold(.ttf)");
+}
+h1.logotopo{
+  font-family: 'fontecorpo';
+  color-interpolation-filters: linearRGB;
+  color: #ffffff;
+ 
+ 
+}
+/*TIPOGRAFIA*/
+*{
+    box-sizing: border-box;
+    transition: all .3s ease;
+  }
+  html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  #interface{
+    background: #ffffff 50% 0 repeat-y fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0, 0,.5);
+    padding: 2px;
+  }
+  ul{
+    list-style: none;
+  }
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  
+    
+  }
+  header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #0e0e0ee3;
+  }
+  .content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .open-nav{
+    display: none;
+  }
+  nav{
+    width: 100%;
+    max-width: 700px;
+  }
+  nav .list-menu{
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+  }
+  nav .list-menu a {
+    font-family: 'fonteTopo';
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+  
+  nav .list-menu a:hover{
+    color: rgb(255, 0, 0);
+  }
+  nav .list-menu a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    left: 0;
+    bottom: 0;
+    background: rgb(255, 0, 0);
+    transition: all .3s ease;
+  }
+  nav .list-menu a:hover::before{
+    width: 100%;
+    transition: all .3s ease;
+  }
+  /*TIPOGRAFIA2*/
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+  }
+  
+  h3,h5 {
+    font-weight: 500;
+  }
+  
+  h1 {
+      font-size: 40px;
+      letter-spacing: 2px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    line-height: 36px;
+  }
+  
+  h5 {
+      letter-spacing: 1px;
+      padding-top: 10px;
+  }
+  
+  p {
+      color: #707070;
+      font-size: 14px;
+      line-height: 24px;
+  }
+  
+  a {
+    text-decoration: none !important;
+    outline: none;
+
+ }
+ img{
+   width: 450px;
+   height: 400px;
+   border-radius: 20px;
+ }
+ figure#foto-legenda img{
+   border-radius: 20px;
+   width: 600px;
+   height: 400px;
+ }
+ img#fotodologotipo{
+   width: 40px;
+   height: 40px;
+ }
+ /*ARTIGO DO CORPO do section*/
+ article#nocitica-principal h2 {
+	background-color: #dddddd;
+	color:#000000;
+  font-size: 15pt;
+  font-family: 'fonteTopo';
+	padding: 5px 10px 5px 5px;
+	margin: 10px 0px 10px 0px;
+	text-align: justify;
+}
+
+  /*ASIDE LATERAL H1 H2 H3*/
+  aside#lateral h1 {
+    font-family: 'fonteTopo';
+    font-size: 20pt;
+    color: #ffffff;
+    background-color: red;
+    margin-top: 25px;
+    margin-right: 5px;
+    padding-left: 5px;
+    text-align: justify;
+  }
+  aside#lateral h2{
+    background-color: red;
+    font-size: 15pt;
+    font-family: 'fonteTopo';
+    color: #ffffff;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding: 5px;
+  }
+  aside#lateral h3{
+    font-family: 'fonteTopo';
+    font-size: 14pt;
+    text-indent: 1px solid #707070;
+  }
+  
+  /*intro section*/
+  #intro {
+    background: url('../_imagens/0,8b2eda50-8ffc-4c8d-b45e-095049f3c688--r--NjQweDM0NQ==.jpg') 50% 0 repeat-y fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: #070202;
+    display: -webkit-box;
+    display: -webkit-flex;
+     display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: 'fonteTopo';
+}
+
+  #intro h3 {
+  letter-spacing: 2px;
+}
+
+/*---------------------------------------
+    Detail section              
+-----------------------------------------*/
+#detail {
+  clear: both;
+  border-top: 1px solid #707070;
+  background: #222;
+  color: #ffffff;
+}
+
+#detail .fa {
+color: #f2545f;
+font-size: 48px;
+}
+
+/*section-corpo*/
+section#corpo{
+  display: block;
+  width: 800px;
+  float: left;
+  border-right: 1px solid #707070;
+  padding: 10px ;
+}
+
+/*Aside-LATERAL*/
+aside#lateral{
+  display: block;
+  width: 500px;
+  float: right;
+  background: url(../_imagens/slide_1.jpg)  50% 0 repeat-y fixed;
+  padding-top: 1px;
+  padding-left: 10px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-left: 15px;
+  box-shadow: 2px 4px 2px rgba(0,0,0,.5) ;
+  
+}
+
+/*footer-rodape*/
+footer#rodape{
+  background: #222;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  clear: both;
+  border-top: 1px solid #707070;
+}
+footer#rodape p{
+  text-align: center;
+}
+footer#rodape a{
+  font-family: 'fonteTopo';
+    position: relative;
+    text-decoration: none;
+    color: rgb(55, 0, 255);
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+footer#rodape a:hover{
+  color: rgb(255, 255, 255);
+}
+
+  /*RESPONSIVIDADE
+  @media (max-width: 425px ){
+    nav{
+      position: fixed;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100%;
+      background:  #c9312c8a;
+    }
+    nav .list-menu{
+      flex-direction: column;
+      margin: 0;
+      padding: 117px 0 0 0;
+    }
+    nav .list-menu a{
+      display: block;
+      margin-bottom: 20px;
+    }
+   
+    .open-nav{
+      position: relative;
+      display: table-column;
+      width: 40pt;
+      height: 30px;
+      z-index: 3;
+    }
+     
+    .open-nav .line{
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      background:#000000;
+      left: 0;
+      border-radius: 5px ;
+    }
+    .open-nav .line.line_1{
+      top: 0;
+    }
+    .open-nav .line.line_2{
+     top: 50%; 
+     transform: translateY(-50%);
+    }
+    .open-nav .line.line_3{
+      bottom: 0;
+    }
+    bottom.open-nav.open .line.line_2{
+      left: 100%;
+
+    }
+    nav.menu.active{
+      left: 0;
+    }
+  }
+  */
